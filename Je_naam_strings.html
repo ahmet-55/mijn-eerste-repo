@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>   
+    let voornaam = 'ahmet' ;
+    let achternaam = 'kose' ;
+    let naam = voornaam + ' ' + achternaam ;
+    document.write (`<p>Hallo ${naam}.</p>`) ;
+    let naam_lengte = naam.length;
+    document.write (`<p>naam bevat ${naam_lengte} karakters.</p>`);
+    let filename = '"javaScriptFramework"';
+    document.write (`<p> de originele filename is: ${filename}</p>`);
+    filename = filename.toLowerCase();
+    document.write (`<p>De filename kan beter in kleine letters getypt worden, dus: ${filename}.`);
+    let file1 = filename.substring(1,11);
+    let file2 = filename.substring(11,20);
+    document.write (`<p>als je ${filename} opsplitst krijg je : '${file1}' en '${file2}' </p>`);
+    let charr = filename.charAt(6);
+    document.write (`<p>het zesde karakter volgends mense in ${filename} is ${charr} </p>`);
+    let mail = 'jan.klaassen@mail.com';
+    let loc = mail.indexOf("@");
+    document.write (`<p>in ${mail} staat de @ op positie: ${loc} </p>`);
+    let etpos = mail.indexOf('@');
+    let emailnaam = mail.substring(0,etpos);
+    document.write (`<p> de naam is dus: ${emailnaam} </p>`);
+    let tekst = 'deze tekst is te lang en zal worden afgekapt op 8 tekens m.b.v substr()';
+    let korttekst = tekst.substr(0,8);
+    document.write (`<p> De originele tekst: ${tekst} word dan: ${korttekst} </p>`)
+    </script>
+</body>
+</html>
